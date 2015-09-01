@@ -1,0 +1,261 @@
+body
+{
+	font-family: 'Quicksand', sans-serif;
+	margin:0 0 0 0;
+}
+
+h1,h2,h3,p
+{
+	cursor:default;
+}
+
+a
+{
+	text-decoration:none;
+}
+
+p
+{
+	font-size:16px;
+}
+
+h1
+{
+	font-weight:100;
+	font-size:50px;
+}
+
+h2
+{
+	color:#099;
+	font-weight:400;
+	font-size:20px;
+}
+h3
+{
+	font-size:16px;
+}
+	
+nav
+{
+	background-color:white;
+	padding:5px 0;
+	border-top:thick solid #0C9;
+	text-align:center;
+	position:fixed;
+	top: 0;
+	width:100%;
+	font-size:0px;
+	z-index:10;
+	box-shadow:1px 2px 8px white;
+}
+
+nav a
+{
+	font-weight:600;
+	padding:15px 15px 15px 15px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	color:#000;
+	font-size:16px;
+	min-width:15%;
+	-webkit-transition-duration:.5s; /*For Chrome and Safari*/
+	-moz-transition-duration:.5s; /*For Morzilla*/
+	-o-transition-duration:.5s; /*For Opera*/
+	-ms-transition-duration:.5s; /*For IE*/
+	transition-duration:.5s; /*For All?*/
+}
+
+nav a:hover
+{
+	background-color:#0C9;
+}	
+
+
+.indpage /*Individual Page*/
+{
+	padding:.5em 2em;
+}
+
+#home /*Home Page*/
+{
+	background-color:#171717;
+	color:white;
+	margin-top:50px;
+}
+
+#topDiv
+{
+	display:table;
+	width:100%;
+	height:100vh;
+}
+
+#MainI img /*Icon*/
+{
+	width:80%;
+	-webkit-animation:ease animateinleft 2s;
+	-o-animation:ease animateinleft 2s;
+	-ms-animation:ease animateinleft 2s;
+	-moz-animation:ease animateinleft 2s;
+	animation:ease animateinleft 2s;
+}
+
+#MainI,#MainT /*Icon and Text Container (For Top Page)*/
+{
+	display:table-cell;
+	vertical-align:middle;
+	width:50%;
+}
+
+#MainT h1,#MainT a,#MainT p
+{
+	padding:0;
+	margin:20px 0;
+	width:100%;
+	text-align:center;
+	display:block;
+	cursor:default;
+}
+
+#MainT .dlink
+{
+	margin:0 auto;
+	color:white;
+	background-color:#42aa9a;
+	margin-top:30px;
+	text-decoration:none;
+	width:50%;
+	text-align:center;
+	padding:20px 10px;
+	cursor:auto;
+	border-radius:2px;
+}
+
+#MainT .dlink:hover
+{
+	background-color:#146055;
+}
+
+#faq p:nth-child(2n+1)
+{
+	font-weight:600;
+}
+
+.dbutton
+{
+	display:block;
+	width:50%;
+	margin:0 auto;
+	height:50px;
+	background:#0C9;
+	line-height:50px;
+	color:#fff;
+	text-align:center;
+	border-radius:5px;
+	-webkit-transition-duration:.5s; /*For Chrome and Safari*/
+	-moz-transition-duration:.5s; /*For Morzilla*/
+	-o-transition-duration:.5s; /*For Opera*/
+	-ms-transition-duration:.5s; /*For IE*/
+	transition-duration:.5s; /*For All?*/
+}
+
+.dbutton:hover
+{
+	background:#096;
+}
+
+#scr
+{
+	display:block;
+	width:100%;
+}
+
+#scrText
+{
+	opacity:0;
+	width:100%;
+	text-align:center;
+	background-color:white;
+	position:relative;
+	margin-bottom:-50px;
+	bottom:50px;
+	height:50px;
+	line-height:50px;
+	-webkit-transition-duration:.3s; /*For Chrome and Safari*/
+	-moz-transition-duration:.3s; /*For Morzilla*/
+	-o-transition-duration:.3s; /*For Opera*/
+	-ms-transition-duration:.3s; /*For IE*/
+	transition-duration:.3s; /*For All?*/
+
+}
+#scrHover:hover #scrText
+{
+	opacity:0.8;
+}
+#scrHover
+{
+	width:50%;
+	margin:0 auto;
+	padding:10px 0;
+}
+
+#footer
+{
+	background-color:#f7f7f7;
+	padding:1em 0;
+	margin:0;
+	text-align:center;
+}
+
+/*http://css-tricks.com/custom-scrollbars-in-webkit*/
+::-webkit-scrollbar
+{
+	width:10px;
+	background:#666;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background:#14A572;
+}
+::-webkit-scrollbar-thumb {
+	background:#0C9;
+}
+
+html{
+	scrollbar-base-color:#fff;
+	scrollbar-3dlight-color:#fff;
+	scrollbar-arrow-color:#000;
+	scrollbar-base-color:#fff;
+	scrollbar-face-color:#67e0c2;
+	scrollbar-darkshadow-color:#fff;
+	scrollbar-shadow-color:#fff;
+}
+
+@keyframes animateinleft
+{
+	from{opacity:0; margin-left:-300px;}
+	to{opacity:1; margin-left:0px;}
+
+}
+@-webkit-keyframes animateinleft
+{
+	from{opacity:0; margin-left:-300px;}
+	to{opacity:1; margin-left:0px;}
+}
+@-ms-keyframes animateinleft
+{
+	from{opacity:0; margin-left:-300px;}
+	to{opacity:1; margin-left:0px;}
+}
+@-o-keyframes animateinleft
+{
+	from{opacity:0; margin-left:-300px;}
+	to{opacity:1; margin-left:0px;}
+}
+@-moz-keyframes animateinleft
+{
+	from{opacity:0; margin-left:-300px;}
+	to{opacity:1; margin-left:0px;}
+}
