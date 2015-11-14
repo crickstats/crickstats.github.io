@@ -109,7 +109,7 @@ nav a:hover
 	width:50%;
 }
 
-#MainT h1,#MainT a,#MainT p
+#MainT h1,#MainT p
 {
 	padding:0;
 	margin:20px 0;
@@ -118,24 +118,46 @@ nav a:hover
 	display:block;
 	cursor:default;
 }
-
-#MainT .dlink
+input
+{
+    border: none;
+    outline: none;
+}
+form.dlink
+{
+    margin-top:4vh;
+    -webkit-appearance: none; -moz-appearance: none;
+    padding:0;
+}
+form input
+{
+    padding:0;
+    background-color:transparent;
+    color:white;
+    width:100%;
+	padding:15px 0;
+	margin:0 auto;
+	text-decoration:none;
+    font-size:16px;
+    cursor:pointer;
+    float: none;
+}
+.dlink
 {
     align-content:center;
-	margin:0 auto;
+	margin:1vh auto;
 	color:white;
 	background-color:#42aa9a;
-	margin-top:30px;
 	text-decoration:none;
 	width:65%;
 	text-align:center;
-	padding:15px 10px;
+	padding:15px 0;
 	cursor:auto;
 	border-radius:2px;
     border: none;
     display:block;
     float: none;
-    
+    width:50%;
 }
 
 #MainT form1
