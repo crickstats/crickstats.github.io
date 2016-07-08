@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>CrickStats</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <!--[if lt IE 7 ]><style>#MainI img{float: none;} nav{display:none;}</style><![endif]-->
+    </head>
+    <body>
+        <nav>
+            <a href="#mainpage">Home</a>
+            <a href="#download">Download</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="mainpage">
+            <div id="home" class="page">
+                <div id="MainI">
+                    <img src="assets/Icon.png" alt=''>
+                </div>
+                <div id="MainT">
+                    <h1>CrickStats</h1>
+                    <p>The must have for every cricket fan.</p>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="dlink">
+                        <input value="Donate" name="submit" type="submit">
+                        <input name="cmd" value="_donations" type="hidden">
+                        <input name="business" value="RRQR8YB46CEL4" type="hidden">
+                        <input name="lc" value="AU" type="hidden">
+                        <input name="item_name" value="CrickStats" type="hidden">
+                        <input name="currency_code" value="AUD" type="hidden">
+                        <input name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHosted" type="hidden">
+                    </form>
+                    <a class="dlink" id="downloadbtn" href="CrickStats.zip" title="">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="download" class="page">
+            <h2>Download</h2>
+            <p>CrickStats is every cricket fans' dream. A portable database containing and consisting of more than 2500 players, CrickStats is accessible right from your desktop with no internet connection needed, is <strong>free</strong> to use and super easy to set up!</p>
+
+            <div id="scrHover">
+                <img src="assets/scr.png" alt="CrickStats Screenshot" id="scr">
+            </div>
+            <a class="dbutton" id="downloadbtn2" href="CrickStats.zip" title="Download">Download CrickStats</a>
+            <p>Stats kindly provided by HowStat.com.</p>
+
+
+            <p>System Requirments: .NET Framework 4.0 on Windows</p>
+            <p><b>Other Requirements:</b></p>
+            <p>This program is optimized for Windows XP, Vista, 7, 8, 10 with .NET Framework 4.0. </p>
+            <p>A mininum of 100MB of Free RAM is recommended. </p>
+            <p>A mininum of 1GHz Processor Power is recommended. </p>
+        </div>
+
+        <div id="faq" class="page">
+            <h2>FAQ &amp; Help</h2>
+            <p>Is the program free?</p>
+            <p>It is free as long as you use it for personal purposes only.</p>
+            <p>Why does it come up with error message on open?</p>
+            <p>It is likely that you haven't got .NET Framework 4 installed on your computer. However, if the problem persists please take a screenshot and
+                <a href="#contact">contact us</a> with a description of the problem and a screenshot attached.</p>
+            <p>Do you provide technical assistance with downloading the program and installing it on my computer?</p>
+            <p>We do not and you will have to resolve all issues to do with your computer by yourself. However, you are more than welcome to report bugs by emailing us.</p>
+            <p>Why did you create the program?</p>
+            <p>The program started as an idea for the Monash CGBC IT Challenge Competition. We thought that this will be useful for cricket fans who want to look up players' stats while without an Internet Connection. </p>
+            <p>What are the donations for?</p>
+            <p>To help cover the cost of obtaining the database.</p>
+        </div>
+
+        <div id="contact" class="page">
+            <h2>Contact Us</h2>
+            <p>Please contact us by <a href="mailto:crickstats23@gmail.com">emailing us</a>.</p>
+            <br>
+        </div>
+        <p id="footer">Copyright © CrickStats 2014 - 2016</p>
+
+        <script src="assets/js/jquery-1.10.2.min.js"></script>
+        <script>
+            //From http://css-tricks.com/snippets/jquery/smooth-scrolling/{
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                    || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top - 50
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+            document.onreadystatechange = function () {
+                if (document.readyState == "complete") {
+                    document.getElementById('downloadbtn').onclick = function () {
+                        ga('send', 'event', 'Download', 'Download CrickStats', 'Download 1');
+                    };
+                    document.getElementById('downloadbtn2').onclick = function () {
+                        ga('send', 'event', 'Download', 'Download CrickStats', 'Download 2');
+                    };
+                }
+            }
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-67306868-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
